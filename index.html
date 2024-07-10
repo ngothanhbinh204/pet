@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="!scroll-smooth" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -21,59 +21,16 @@
         background-size: contain;
     }
 
-    /* SVG hoặc hình ảnh cho nút next */
     .swiper-button-next::after {
         background-image: url('data:image/svg+xml;utf8,<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.40918 4.52258L14.8865 10.9999L8.40918 17.4771" stroke="%236E6E73" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>');
     }
 
-    /* SVG hoặc hình ảnh cho nút prev */
     .swiper-button-prev::after {
         background-image: url('data:image/svg+xml;utf8,<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.5908 4.52258L7.11351 10.9999L13.5908 17.4771" stroke="%236E6E73" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>');
     }
 </style>
 
-<!-- <style>
-    .swiper-button-next,
-    .swiper-button-prev {
-        background-color: rgba(0, 0, 0, 0.5);
-        /* Màu nền */
-        color: white;
-        /* Màu chữ */
-        border-radius: 50%;
-        /* Bo tròn góc */
-        padding: 10px;
-        /* Khoảng cách bên trong */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
-    .swiper-button-next svg,
-    .swiper-button-prev svg {
-        width: 22px;
-        height: 22px;
-    }
-
-    .swiper-button-next {
-        right: -30px;
-        /* Đặt ra khỏi vùng lưới */
-    }
-
-    .swiper-button-prev {
-        left: -30px;
-        /* Đặt ra khỏi vùng lưới */
-    }
-
-    /* Đặt lại khi responsive */
-    @media (max-width: 768px) {
-
-        .swiper-button-next,
-        .swiper-button-prev {
-            right: 10px;
-            left: 10px;
-        }
-    }
-</style> -->
 
 <body>
 
@@ -84,17 +41,17 @@
             <nav class="flex justify-between md:justify-center items-center py-2">
                 <!-- img -->
                 <div class="z-20 flex justify-start items-center">
-                    <img src="img/logo.png" alt="Logo petcare">
+                    <img class="" src="img/logo.png" alt="Logo petcare">
                 </div>
                 <!-- link -->
 
                 <ul id="menu" class="c-menu invisible md:visible">
-                    <li class="md:mx-7"><a class="c-link" href="#">Sản phẩm</a></li>
-                    <li class="md:mx-7"><a class="c-link" href="#">Các thành phần</a></li>
-                    <li class="md:mx-7"><a class="c-link" href="#">Cách dùng</a></li>
-                    <li class="md:mx-7"><a class="c-link" href="#">Tin dùng</a></li>
-                    <li class="md:mx-7"><a class="c-link" href="#">CTA</a></li>
-                    <li class="md:mx-7"><a class="c-link" href="#">Đặt mua</a></li>
+                    <li class="md:mx-7"><a class="c-link" href="#sanpham">Sản phẩm</a></li>
+                    <li class="md:mx-7"><a class="c-link" href="#cacthanhphan">Các thành phần</a></li>
+                    <li class="md:mx-7"><a class="c-link" href="#cachdung">Cách dùng</a></li>
+                    <li class="md:mx-7"><a class="c-link" href="#tindung">Tin dùng</a></li>
+                    <li class="md:mx-7"><a class="c-link" href="#cta">CTA</a></li>
+                    <li class="md:mx-7"><a class="c-link" href="#datmua">Đặt mua</a></li>
                     <li class="md:mx-7">
 
                     </li>
@@ -332,18 +289,20 @@
     </section>
 
     <!-- Product -->
-    <section class="mb-20">
+    <section id="sanpham" class="mb-20">
         <div
-            class="xl:max-w-screen-custom-container bg-white mx-auto my-20 px-4 flex flex-col md:flex-row justify-between py-14">
+            class="xl:max-w-screen-custom-container  bg-white mx-auto my-20 px-4 flex flex-col justify-center md:flex-row md:justify-between py-14">
             <!-- col-img -->
-            <div class="img-col my-4 px-3 py-4 md:w-1/2">
-                <div class="flex justify-start bg-sp1-bg bg-no-repeat bg-center bg-contain img-col my-4 px-3 py-4 relative">
-                    <div style="width: 477px;" class="img items-center text-center">
-                      <div class="img flex justify-center items-center text-center">
-                        <img src="img/product_2.png" alt="">
-                      </div>
+            <div style="max-width: 477.7px;"
+                class="flex items-center w-3/4 md:items-start m-auto md:m-px py-4 md:w-1/2 justify-center bg-sp1-bg bg-no-repeat bg-center bg-contain img-col my-4  relative">
+                <div class="img items-center text-center">
+                    <div class="img flex justify-center items-center text-center">
+                        <img class="w-3/4 md:w-full" src="img/product_2.png" alt="">
                     </div>
+                    <img class="absolute -top-8 right-0 w-1/3" src="img/green 1.png" alt="">
+                    <img class="absolute bottom-1/4 left-4 w-1/3" src="img/green 2.png" alt="">
                 </div>
+
             </div>
 
 
@@ -413,18 +372,19 @@
                     ngay</button>
             </div>
             <!-- col-img -->
-            <div class="flex justify-start bg-sp2-bg bg-no-repeat bg-center bg-contain img-col my-4 px-3 py-4 relative">
+            <div
+                class="flex justify-center bg-sp2-bg bg-no-repeat bg-center bg-contain img-col my-4 px-3 py-4 relative">
                 <div style="width: 456px;" class="img items-center text-center">
-                  <div class="img flex justify-center items-center text-center">
-                    <img src="img/lothuoc_double.png" alt="">
-                  </div>
+                    <div class="img flex justify-center items-center text-center">
+                        <img class="w-3/4 md:w-full" src="img/lothuoc_double.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Cac thanh phan -->
-    <section class="mb-20">
+    <section id="cacthanhphan" class="mb-20">
         <div class=" page xl:max-w-screen-custom-container bg-white mx-auto px-4 flex flex-col justify-center">
             <div class="flex text-center items-center flex-col justify-center">
                 <div class="items-center text-center relative">
@@ -479,7 +439,7 @@
     </section>
 
     <!-- Cách dùng -->
-    <section class="mb-20">
+    <section id="cachdung" class="mb-20">
         <div
             class="xl:max-w-screen-custom-container bg-white mx-auto my-20 px-4 flex flex-col md:flex-row justify-between">
 
@@ -550,7 +510,7 @@
     <section class="mb-20">
         <div
             class=" relative page xl:max-w-screen-custom-container-lg bg-white mx-auto my-20 flex flex-col justify-center ">
-            <div class="flex text-center items-center flex-col justify-center ">
+            <div class="flex text-center items-center flex-col justify-center px-4 ">
                 <div class="items-center text-center relative  ">
                     <div class="title inline-block text-center mb-1  ">
                         <span class="font-normal text-lg uppercase text-main-color">Cách dùng</span>
@@ -560,7 +520,8 @@
                         </svg>
                     </div>
                     <div style="max-width: 694px;" class="mb-14 text-center items-center mx-auto">
-                        <h2 style="line-height: 57px;" class="text-4xl font-bold text-gray-800">Công dụng & Trải nghiệm
+                        <h2 style="line-height: 57px;" class="text-4xl font-bold text-gray-800 mb-2">Công dụng & Trải
+                            nghiệm
                             sản phẩm</h2>
                         <span>Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn
                             trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản </span>
@@ -705,7 +666,7 @@
     </section>
 
     <!-- Tin dùng -->
-    <section class="mb-20">
+    <section id="tindung" class="mb-20">
         <div class=" page xl:max-w-screen-custom-container bg-white mx-auto my-20 px-4 flex flex-col justify-center">
             <div class="flex text-center items-center flex-col justify-center">
                 <div class="items-center text-center relative">
@@ -1540,7 +1501,7 @@
 
 
     <!-- CTA -->
-    <section class="mb-20">
+    <section id="cta" class="mb-20">
         <div class="page xl:max-w-screen-custom-container mx-auto my-20 px-4 flex flex-col justify-center pt-14">
             <div class="flex text-center items-center flex-col justify-center">
                 <div class="items-center text-center relative mb-14">
@@ -1558,50 +1519,49 @@
                     </div>
                 </div>
 
-                <div style="height: 411px;" class="w-full rounded-lg bg-cta-banner bg-no-repeat bg-center bg-cover">
-                    <div class="flex flex-row">
-                        <div class="basis-1 md:basis-1/2 py-9 px-12">
-                            <div class="flex flex-col justify-start text-start ">
-                                <div class="box">
-                                    <h2 style="line-height: 150%;" class="text-4xl font-bold text-white"> Lorem Ipsum
-                                        chỉ đơn giản là một đoạn văn bản giả</h2>
+                <div class="w-full rounded-lg bg-cta-banner bg-no-repeat bg-center bg-cover">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:basis-3/5 py-9 px-4 md:px-12">
+                            <div class="flex flex-col justify-start text-start">
+                                <div class="box mb-4">
+                                    <h2 class="text-xl md:text-4xl font-bold text-white leading-6 md:leading-normal">
+                                        Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả</h2>
                                 </div>
-                                <div class="box">
+                                <div class="box mb-6">
                                     <p class="font-normal text-lg text-white">Lorem Ipsum chỉ đơn giản là một đoạn văn
-                                        bản giả, được dùng vào </p>
+                                        bản giả, được dùng vào</p>
                                 </div>
                             </div>
 
-                            <div class="flex flex-row gap-9 items-center">
-                                <div class="input text-start">
+                            <div class="flex flex-col md:flex-row gap-9 items-center">
+                                <div class="input text-start w-full md:w-auto">
                                     <div class="flex flex-col">
                                         <h2 class="font-bold text-md text-white mb-6">Hợp tác với chúng tôi</h2>
-                                        <div class="input-box inline-flex gap-3">
-                                            <input class="border rounded-lg w-full py-3 px-4 text-gray-700" type="text"
-                                                placeholder="Nhập email">
+                                        <div class="input-box flex flex-col md:flex-row gap-3">
+                                            <input
+                                                class="min-w-0 border rounded-lg w-full md:w-auto py-3 px-4 text-gray-700"
+                                                type="text" placeholder="Nhập email">
                                             <button type="button"
-                                                class=" text-white bg-main-color hover:bg-main-color font-bold rounded-lg text-xl px-6 py-3">Gửi</button>
+                                                class="text-white bg-main-color hover:bg-main-color font-bold rounded-lg text-xl px-6 py-3 w-full md:w-auto">Gửi</button>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="input">
+                                <div class="input w-full md:w-auto">
                                     <div class="flex flex-col items-center space-y-2">
                                         <div class="w-px h-16 bg-white"></div>
                                         <span class="text-white">hoặc</span>
                                         <div class="w-px h-16 bg-white"></div>
                                     </div>
                                 </div>
-                                <div class="input w-24">
-                                    <div class="flex flex-col gap-3">
+                                <div class="input w-full md:w-auto">
+                                    <div class="flex flex-col gap-3 w-full md:w-24">
                                         <span class="text-white text-xs font-thin">Quét mã QR để tải ứng dụng
                                             Petcare</span>
-                                        <img class="w-full h-24" src="img/image 11.png" alt="">
+                                        <img class="w-full" src="img/image 11.png" alt="">
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -1610,7 +1570,7 @@
     </section>
 
     <!-- Đặt mua  -->
-    <section class="mb-20">
+    <section id="datmua" class="mb-20">
         <div class="page xl:max-w-screen-custom-container mx-auto my-20 px-4 flex flex-col justify-center">
             <div class="flex text-center items-center flex-col justify-center">
                 <div class="items-center text-center relative mb-14">
@@ -1633,12 +1593,12 @@
 
                     <div class="w-full mx-auto bg-second-color rounded-xl shadow-md overflow-hidden">
                         <div class="md:flex">
-                            <div class="md:shrink-0 ">
+                            <div class=" md:shrink ">
                                 <img class="h-96 w-full object-cover object-top md:h-full md:w-full" src="img/CTA.png"
                                     alt="Modern building architecture">
                             </div>
 
-                            <div class="basis-7/12">
+                            <div class=" basis-7/12">
                                 <div class="bg-second-color py-11 px-12 h-full">
                                     <div class="flex flex-col text-start gap-4">
                                         <div class="title">
@@ -1646,46 +1606,46 @@
                                                 Form đặt hàng
                                             </h2>
                                         </div>
-                                        <div class="grid grid-cols-2 grid-rows-3 gap-4">
+                                        <div class="grid grid-rows-6 md:grid-cols-2 md:grid-rows-3 gap-4">
                                             <div class="">
                                                 <h2 class="font-medium text-md text-white mb-3">Họ và tên</h2>
                                                 <div class="input-box">
-                                                    <input class="border rounded-lg w-full py-3 px-4 text-gray-700"
+                                                    <input class=" border rounded-lg w-full py-3 px-4 text-gray-700"
                                                         type="text" placeholder="Nhập họ và tên...">
                                                 </div>
                                             </div>
                                             <div class="">
                                                 <h2 class="font-medium text-md text-white mb-3">Số điện thoại</h2>
                                                 <div class="input-box">
-                                                    <input class="border rounded-lg w-full py-3 px-4 text-gray-700"
+                                                    <input class=" border rounded-lg w-full py-3 px-4 text-gray-700"
                                                         type="text" placeholder="Nhập Số điện thoại...">
                                                 </div>
                                             </div>
                                             <div class="">
                                                 <h2 class="font-medium text-md text-white mb-3">Tên thuốc</h2>
                                                 <div class="input-box">
-                                                    <input class="border rounded-lg w-full py-3 px-4 text-gray-700"
+                                                    <input class=" border rounded-lg w-full py-3 px-4 text-gray-700"
                                                         type="text" placeholder="Nhập tên thuốc...">
                                                 </div>
                                             </div>
                                             <div class="">
                                                 <h2 class="font-medium text-md text-white mb-3">Số lượng</h2>
                                                 <div class="input-box">
-                                                    <input class="border rounded-lg w-full py-3 px-4 text-gray-700"
+                                                    <input class=" border rounded-lg w-full py-3 px-4 text-gray-700"
                                                         type="text" placeholder="Nhập số lượng...">
                                                 </div>
                                             </div>
                                             <div class="">
                                                 <h2 class="font-medium text-md text-white mb-3">Địa chỉ</h2>
                                                 <div class="input-box">
-                                                    <input class="border rounded-lg w-full py-3 px-4 text-gray-700"
+                                                    <input class=" border rounded-lg w-full py-3 px-4 text-gray-700"
                                                         type="text" placeholder="Nhập địa chỉ...">
                                                 </div>
                                             </div>
                                             <div class="">
                                                 <h2 class="font-medium text-md text-white mb-3">Ghi chú</h2>
                                                 <div class="input-box">
-                                                    <input class="border rounded-lg w-full py-3 px-4 text-gray-700"
+                                                    <input class=" border rounded-lg w-full py-3 px-4 text-gray-700"
                                                         type="text" placeholder="Thêm ghi chú...">
                                                 </div>
                                             </div>
@@ -1753,7 +1713,7 @@
                     </div>
                     <!-- Column 2 -->
                     <div class="mb-6 md:mb-0 md:w-3/12 text-center">
-                        <div class="flex flex-col gap-3 ">
+                        <div class="flex flex-col items-center gap-3 ">
                             <div class="title">
                                 <h2 class="font-bold text-xl text-center md:text-start text-gray-700">Thông tin liên hệ
                                 </h2>
@@ -1836,7 +1796,7 @@
                     <!-- Column 3 -->
                     <div class="mb-2 md:w-2/12 text-center">
                         <div class="box">
-                            <div class="flex flex-col gap-3 ">
+                            <div class="flex flex-col items-center gap-3 ">
                                 <div class="title">
                                     <h2 class="font-bold text-xl text-center md:text-start text-gray-700">Chính sách
                                     </h2>
