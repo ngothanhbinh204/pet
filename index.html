@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MayHotel</title>
+    <link rel="icon" href="img/logoMay.png" type="image/x-icon">
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="">
+    <header class="bg-white shadow-shadow2 sticky top-0 z-50  ">
+        <nav
+            class="flex justify-between container py-[10px] lg:flex lg:items-center lg:justify-between sticky top-0 z-50">
+            <div class="flex justify-between items-center pl-4">
+                <span class="text-2xl cursor-pointer">
+                    <img class="cursor-pointer mr-3 h-16 sm:h-21 inline" src="img/logoMay.png"> </span>
+            </div>
+
+            <ul
+                class="nav-links flex flex-col lg:flex lg:flex-row lg:items-center z-[-1] lg:z-auto lg:static absolute bg-white w-full left-0 lg:w-auto lg:py-0 py-4 lg:pl-0 pl-7 lg:opacity-100 lg:gap-[60px] gap-8 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                <li>
+                    <a class="text-neu1" href="#nguyennhan">Nguyên nhân</a>
+                </li>
+                <li>
+                    <a class="text-neu1" href="#tienich">Tiện ích</a>
+                </li>
+                <li>
+                    <a class="text-neu1" href="#banggia">Bảng giá</a>
+                </li>
+                <li>
+                    <a class="text-neu1" href="#dontra">Quy trình đón/trả</a>
+                </li>
+                <li>
+                    <a class="text-neu1" href="#thuvien">Thư viện</a>
+                </li>
+                <li>
+                    <a class="text-neu1" href="#faq">FAQ</a>
+                </li>
+            </ul>
+
+            <div class="flex items-center gap-6 pr-4">
+                <button
+                    class="flex items-center text-gray-800 bg-linear-gradient  font-medium rounded-3xl text-sm py-1.5 pl-2 pr-3 focus:outline-none">
+                    <div class="box-phone-contact bg-white p-2 rounded-full mr-2">
+                        <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_18_313)">
+                                <path
+                                    d="M4.16667 4.00098H7.5L9.16667 8.37598L7.08333 9.68848C7.9758 11.5886 9.44039 13.1264 11.25 14.0635L12.5 11.876L16.6667 13.626V17.126C16.6667 17.5901 16.4911 18.0352 16.1785 18.3634C15.866 18.6916 15.442 18.876 15 18.876C11.7494 18.6686 8.68346 17.2192 6.38069 14.8013C4.07792 12.3833 2.69754 9.16412 2.5 5.75098C2.5 5.28685 2.67559 4.84173 2.98816 4.51354C3.30072 4.18535 3.72464 4.00098 4.16667 4.00098"
+                                    stroke="#1DC8DA" stroke-width="1.25" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M12.5 6.62598C12.942 6.62598 13.366 6.81035 13.6785 7.13854C13.9911 7.46673 14.1667 7.91185 14.1667 8.37598"
+                                    stroke="#1DC8DA" stroke-width="1.25" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M12.5 3.125C13.8261 3.125 15.0979 3.67812 16.0355 4.66269C16.9732 5.64726 17.5 6.98261 17.5 8.375"
+                                    stroke="#1DC8DA" stroke-width="1.25" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_18_313">
+                                    <rect width="20" height="21" fill="white" transform="translate(0 0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <p class="font-bold text-white text-base">090 245 22 54</p>
+
+                </button>
+
+                <span class="text-3xl cursor-pointer mx-2 lg:hidden block">
+                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                </span>
+            </div>
+        </nav>
+    </header>
+    <main class="mx-auto flex flex-col gap-20 mb-20">
+
+        <section class="bg-hero1 pb-10 px-4">
+            <div class="container flex flex-col gap-[30px] items-center relative">
+                <div class="content flex flex-col gap-[20px] items-center mt-10">
+                    <div class="custom_title text-center">
+                        <p>DỊCH VỤ LƯU TRÚ KHÁCH SẠN CHO CHÓ</p>
+                        <p>CỦA <span class="text-gradient">MAY HOTEL</span> </p>
+                    </div>
+                    <button type="button"
+                        class="flex gap-2 border-2 border-primary rounded-custom_radius text-primary font-semibold text-base px-4 py-2">
+                        <svg width="27" height="20" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="4.41831" cy="9.96593" rx="2.74668" ry="3.44404"
+                                transform="rotate(-14.0023 4.41831 9.96593)" fill="#1DC8DA" />
+                            <ellipse cx="2.74668" cy="3.44404" rx="2.74668" ry="3.44404"
+                                transform="matrix(-0.970286 -0.24196 -0.24196 0.970286 26.0801 7.28882)"
+                                fill="#1DC8DA" />
+                            <ellipse cx="9.72371" cy="4.365" rx="3.1061" ry="4.30462"
+                                transform="rotate(-1.13151 9.72371 4.365)" fill="#1DC8DA" />
+                            <ellipse cx="3.1061" cy="4.30462" rx="3.1061" ry="4.30462"
+                                transform="matrix(-0.999805 -0.0197473 -0.0197473 0.999805 20.4668 0.122559)"
+                                fill="#1DC8DA" />
+                            <path
+                                d="M20.2647 16.8234C20.2647 18.3515 18.8626 19.7117 17.52 19.9134C16.3636 20.0871 15.4697 19.5701 13.398 19.5701C10.6533 19.5701 6.75698 21.6042 6.75684 16.8234C6.75674 13.7684 9.98484 9.27002 13.398 9.27002C16.8111 9.27002 20.2647 13.9791 20.2647 16.8234Z"
+                                fill="#1DC8DA" />
+                        </svg>
+
+                        <span class="leading-6">Đặt
+                            lịch hẹn</span>
+                    </button>
+                </div>
+
+                <section class="container overflow-hidden collection_slider pb-10">
+                    <div class="swiper mySwiper mb-4">
+                        <div class="swiper-wrapper">
+                            <div class="content_slider swiper-slide">
+                                <img src="img/inner_vd2.png" alt="">
+                            </div>
+                            <div class="content_slider swiper-slide">
+                                <div class="video-container-1 rounded-2xl relative">
+                                    <img width="100%" src="img/vd-1.png" alt="">
+                                    <img class="btn_play-1 w-[60px]" src="img/playyy.png" alt=""
+                                        onclick="playVideo1('video/petcare_video.mp4')">
+                                    <div class="video-player" id="video_hero">
+                                        <video preload="metadata" width="100%" height="auto" loading="lazy" controls
+                                            id="video1">
+                                            <source src="video/petcare_video.mp4" type="video/mp4">
+                                        </video>
+                                        <img class="close-btn-1 w-[60px]" src="img/out.png" onclick="stopVideo1()"
+                                            alt="">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content_slider swiper-slide">
+                                <img src="img/inner_vd1.png" alt="">
+                            </div>
+                            <div class="content_slider swiper-slide">
+                                <img src="img/inner_vd2.png" alt="">
+                            </div>
+                            <div class="content_slider swiper-slide">
+                                <img src="img/vd-1.png" alt="">
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="box-direc">
+                        <!-- Navigation buttons -->
+                        <div class="swiper-button-prev custom-prev"></div>
+                        <div class="swiper-button-next custom-next"></div>
+                    </div>
+                </section>
+
+                <img class="absolute left-[-8%] top-1 opacity-30" src="img/dauchan1.png" alt="">
+                <img class="absolute w-[70px] left-[-6%] top-[25%] opacity-30" src="img/dauchan1.png" alt="">
+
+            </div>
+        </section>
+
+        <section id="nguyennhan" class="nguyennhan  px-4">
+            <div class="container flex flex-col gap-10 items-center">
+                <div class="custom_title text-center">
+                    <p>Nguyên nhân</p>
+                </div>
+
+                <div
+                    class="box-content_nguyennhan p-12 sm:rounded-xl  md:rounded-3xl lg:rounded-custom_radius_2 border border-primary shadow-shadow2">
+                    <div class="flex flex-col md:flex-row gap-12">
+                        <div class="item_nguyennhan max-w-72 p-1 leading-relaxed">
+                            <p class="text-lg text-center font-bold text-primary mb-1 uppercase">Sức khoẻ</p>
+                            <div class="box">
+                                <ul class="list-disc text-content">
+                                    <li>
+                                        Bé cần vận động giải toả năng lượng thừa giảm tính tăng động.
+                                    </li>
+                                    <li>
+                                        Vận động cải thiện sức khoẻ theo yêu cầu chỉ định của bác sĩ.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="item_nguyennhan max-w-72 p-1 leading-relaxed">
+                            <p class="text-lg text-center font-bold text-primary mb-1 uppercase">Công tác xa</p>
+                            <div class="box">
+                                <ul class="list-disc text-content">
+                                    <li>
+                                        Lịch công tác dày đặc không thể mang bé theo cùng.
+                                    </li>
+                                    <li>
+                                        Không có người trông coi khi vắng nhà.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="item_nguyennhan max-w-72 p-1 leading-relaxed">
+                            <p class="text-lg text-center font-bold text-primary mb-1 uppercase">Trải nghiệm mới cho bé
+                            </p>
+                            <div class="box">
+                                <ul class="list-disc text-content">
+                                    <li>
+                                        Được gặp gỡ, vui đùa cùng các bạn cún khác (xã hội hoá).
+                                    </li>
+                                    <li>
+                                        Được chạy thoải mái môi trường cùng bạn.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="tienich" class="tienich px-4">
+            <div class=" flex flex-col gap-10 items-center pb-14 relative">
+                <div class="custom_title text-center">
+                    <p>Tiện ích <span class="text-gradient">May Hotel</span> mang lại?</p>
+                </div>
+
+                <div class="container box-content z-10">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                        <div
+                            class="card  border border-border_cl rounded-custom_radius_card px-3.5 pt-10 pb-5 relative">
+                            <div class="inner flex flex-col justify-center items-center gap-4">
+                                <img src="img/icon1.png" alt="">
+                                <div class="flex flex-col">
+                                    <p class="text-lg text-center font-bold text-primary mb-2">Sức khoẻ</p>
+                                    <div class="list">
+                                        <div class="list-item">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.13655 0.0192871C4.36671 0.0192871 0.5 3.82487 0.5 8.51929C0.5 13.2137 4.36671 17.0193 9.13655 17.0193C13.9064 17.0193 17.7731 13.2137 17.7731 8.51929C17.7675 3.82713 13.9041 0.0247517 9.13655 0.0192871Z"
+                                                    fill="#E1FCFF" />
+                                                <path
+                                                    d="M14.1216 5.82769L9.1952 12.4074C9.07771 12.5608 8.90251 12.6613 8.70898 12.6864C8.51544 12.7114 8.3198 12.6589 8.16601 12.5406L4.64806 9.7724C4.33762 9.5279 4.28736 9.08201 4.53578 8.77648C4.78421 8.47095 5.23726 8.42148 5.5477 8.66598L8.48125 10.9759L12.9629 4.98973C13.1099 4.77269 13.3661 4.6527 13.6299 4.67738C13.8938 4.70207 14.1224 4.86745 14.2252 5.10786C14.328 5.34827 14.2882 5.62481 14.1216 5.82769Z"
+                                                    fill="#1DC8DA" />
+                                            </svg>
+                                            <span> Không gian rộng lớn với tổng 4 sân chơi diện tích hơn 300m2.
+                                            </span>
+                                        </div>
+                                        <div class="list-item">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.13655 0.0192871C4.36671 0.0192871 0.5 3.82487 0.5 8.51929C0.5 13.2137 4.36671 17.0193 9.13655 17.0193C13.9064 17.0193 17.7731 13.2137 17.7731 8.51929C17.7675 3.82713 13.9041 0.0247517 9.13655 0.0192871Z"
+                                                    fill="#E1FCFF" />
+                                                <path
+                                                    d="M14.1216 5.82769L9.1952 12.4074C9.07771 12.5608 8.90251 12.6613 8.70898 12.6864C8.51544 12.7114 8.3198 12.6589 8.16601 12.5406L4.64806 9.7724C4.33762 9.5279 4.28736 9.08201 4.53578 8.77648C4.78421 8.47095 5.23726 8.42148 5.5477 8.66598L8.48125 10.9759L12.9629 4.98973C13.1099 4.77269 13.3661 4.6527 13.6299 4.67738C13.8938 4.70207 14.1224 4.86745 14.2252 5.10786C14.328 5.34827 14.2882 5.62481 14.1216 5.82769Z"
+                                                    fill="#1DC8DA" />
+                                            </svg>
+                                            <span> Môi trường thiên nhiên thoáng mát, sân tắm nắng và khu vực có bóng
+                                                cây che mát.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="number absolute top-4 left-4">
+                                <span class="text-primary">1</span>
+                            </div>
+                        </div>
+                        <div
+                            class="card  border border-border_cl rounded-custom_radius_card px-3.5 pt-10 pb-5 relative">
+                            <div class="inner flex flex-col justify-center items-center gap-4">
+                                <img src="img/icon2.png" alt="">
+                                <div class="flex flex-col">
+                                    <p class="text-lg text-center font-bold text-primary mb-2">Cải thiện thói
+                                        quen sinh hoạt</p>
+                                    <div class="list">
+                                        <div class="list-item">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.13655 0.0192871C4.36671 0.0192871 0.5 3.82487 0.5 8.51929C0.5 13.2137 4.36671 17.0193 9.13655 17.0193C13.9064 17.0193 17.7731 13.2137 17.7731 8.51929C17.7675 3.82713 13.9041 0.0247517 9.13655 0.0192871Z"
+                                                    fill="#E1FCFF" />
+                                                <path
+                                                    d="M14.1216 5.82769L9.1952 12.4074C9.07771 12.5608 8.90251 12.6613 8.70898 12.6864C8.51544 12.7114 8.3198 12.6589 8.16601 12.5406L4.64806 9.7724C4.33762 9.5279 4.28736 9.08201 4.53578 8.77648C4.78421 8.47095 5.23726 8.42148 5.5477 8.66598L8.48125 10.9759L12.9629 4.98973C13.1099 4.77269 13.3661 4.6527 13.6299 4.67738C13.8938 4.70207 14.1224 4.86745 14.2252 5.10786C14.328 5.34827 14.2882 5.62481 14.1216 5.82769Z"
+                                                    fill="#1DC8DA" />
+                                            </svg>
+                                            <span> Được ra sân vệ sinh đúng giờ, vui chơi theo giờ giấc cố định, phòng
+                                                ngủ yên tĩnh mát mẻ.
+                                            </span>
+                                        </div>
+                                        <div class="list-item">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.13655 0.0192871C4.36671 0.0192871 0.5 3.82487 0.5 8.51929C0.5 13.2137 4.36671 17.0193 9.13655 17.0193C13.9064 17.0193 17.7731 13.2137 17.7731 8.51929C17.7675 3.82713 13.9041 0.0247517 9.13655 0.0192871Z"
+                                                    fill="#E1FCFF" />
+                                                <path
+                                                    d="M14.1216 5.82769L9.1952 12.4074C9.07771 12.5608 8.90251 12.6613 8.70898 12.6864C8.51544 12.7114 8.3198 12.6589 8.16601 12.5406L4.64806 9.7724C4.33762 9.5279 4.28736 9.08201 4.53578 8.77648C4.78421 8.47095 5.23726 8.42148 5.5477 8.66598L8.48125 10.9759L12.9629 4.98973C13.1099 4.77269 13.3661 4.6527 13.6299 4.67738C13.8938 4.70207 14.1224 4.86745 14.2252 5.10786C14.328 5.34827 14.2882 5.62481 14.1216 5.82769Z"
+                                                    fill="#1DC8DA" />
+                                            </svg>
+                                            <span> Ăn uống tiêu chuẩn theo từng khẩu phần riêng biệt, đáp ứng dinh
+                                                dưỡng, khoáng chất, dầu cá theo yêu cầu.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="number absolute top-4 left-4">
+                                <span class="text-primary">2</span>
+                            </div>
+                        </div>
+                        <div
+                            class="card  border border-border_cl rounded-custom_radius_card px-3.5 pt-10 pb-5 relative">
+                            <div class="inner flex flex-col justify-center items-center gap-4">
+                                <img src="img/icon3.png" alt="">
+                                <div class="flex flex-col">
+                                    <p class="text-lg text-center font-bold text-primary mb-2">Vận động & Kết
+                                        bạn</p>
+                                    <div class="list">
+                                        <div class="list-item">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.13655 0.0192871C4.36671 0.0192871 0.5 3.82487 0.5 8.51929C0.5 13.2137 4.36671 17.0193 9.13655 17.0193C13.9064 17.0193 17.7731 13.2137 17.7731 8.51929C17.7675 3.82713 13.9041 0.0247517 9.13655 0.0192871Z"
+                                                    fill="#E1FCFF" />
+                                                <path
+                                                    d="M14.1216 5.82769L9.1952 12.4074C9.07771 12.5608 8.90251 12.6613 8.70898 12.6864C8.51544 12.7114 8.3198 12.6589 8.16601 12.5406L4.64806 9.7724C4.33762 9.5279 4.28736 9.08201 4.53578 8.77648C4.78421 8.47095 5.23726 8.42148 5.5477 8.66598L8.48125 10.9759L12.9629 4.98973C13.1099 4.77269 13.3661 4.6527 13.6299 4.67738C13.8938 4.70207 14.1224 4.86745 14.2252 5.10786C14.328 5.34827 14.2882 5.62481 14.1216 5.82769Z"
+                                                    fill="#1DC8DA" />
+                                            </svg>
+                                            <span>Được vận động trong khuôn viên có rào chắn để quan sát và vệ sinh.
+                                            </span>
+                                        </div>
+                                        <div class="list-item">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.13655 0.0192871C4.36671 0.0192871 0.5 3.82487 0.5 8.51929C0.5 13.2137 4.36671 17.0193 9.13655 17.0193C13.9064 17.0193 17.7731 13.2137 17.7731 8.51929C17.7675 3.82713 13.9041 0.0247517 9.13655 0.0192871Z"
+                                                    fill="#E1FCFF" />
+                                                <path
+                                                    d="M14.1216 5.82769L9.1952 12.4074C9.07771 12.5608 8.90251 12.6613 8.70898 12.6864C8.51544 12.7114 8.3198 12.6589 8.16601 12.5406L4.64806 9.7724C4.33762 9.5279 4.28736 9.08201 4.53578 8.77648C4.78421 8.47095 5.23726 8.42148 5.5477 8.66598L8.48125 10.9759L12.9629 4.98973C13.1099 4.77269 13.3661 4.6527 13.6299 4.67738C13.8938 4.70207 14.1224 4.86745 14.2252 5.10786C14.328 5.34827 14.2882 5.62481 14.1216 5.82769Z"
+                                                    fill="#1DC8DA" />
+                                            </svg>
+                                            <span> Được phân loại theo độ tuổi và giới tính để kết bạn vui chơi cùng
+                                                nhau.
+                                            </span>
+                                        </div>
+                                        <div class="list-item">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.13655 0.0192871C4.36671 0.0192871 0.5 3.82487 0.5 8.51929C0.5 13.2137 4.36671 17.0193 9.13655 17.0193C13.9064 17.0193 17.7731 13.2137 17.7731 8.51929C17.7675 3.82713 13.9041 0.0247517 9.13655 0.0192871Z"
+                                                    fill="#E1FCFF" />
+                                                <path
+                                                    d="M14.1216 5.82769L9.1952 12.4074C9.07771 12.5608 8.90251 12.6613 8.70898 12.6864C8.51544 12.7114 8.3198 12.6589 8.16601 12.5406L4.64806 9.7724C4.33762 9.5279 4.28736 9.08201 4.53578 8.77648C4.78421 8.47095 5.23726 8.42148 5.5477 8.66598L8.48125 10.9759L12.9629 4.98973C13.1099 4.77269 13.3661 4.6527 13.6299 4.67738C13.8938 4.70207 14.1224 4.86745 14.2252 5.10786C14.328 5.34827 14.2882 5.62481 14.1216 5.82769Z"
+                                                    fill="#1DC8DA" />
+                                            </svg>
+                                            <span>Xác định tính cách phù hợp để các bé vui chơi giảm rủi ro xô xát ngoài
+                                                ý muốn.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="number absolute top-4 left-4">
+                                <span class="text-primary">3</span>
+                            </div>
+                        </div>
+                        <div
+                            class="card  border border-border_cl rounded-custom_radius_card px-3.5 pt-10 pb-5 relative">
+                            <div class="inner flex flex-col justify-center items-center gap-4">
+                                <img src="img/icon4.png" alt="">
+                                <div class="flex flex-col">
+                                    <p class="text-lg text-center font-bold text-primary mb-2">Chăm sóc</p>
+                                    <div class="list">
+                                        <div class="list-item">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.13655 0.0192871C4.36671 0.0192871 0.5 3.82487 0.5 8.51929C0.5 13.2137 4.36671 17.0193 9.13655 17.0193C13.9064 17.0193 17.7731 13.2137 17.7731 8.51929C17.7675 3.82713 13.9041 0.0247517 9.13655 0.0192871Z"
+                                                    fill="#E1FCFF" />
+                                                <path
+                                                    d="M14.1216 5.82769L9.1952 12.4074C9.07771 12.5608 8.90251 12.6613 8.70898 12.6864C8.51544 12.7114 8.3198 12.6589 8.16601 12.5406L4.64806 9.7724C4.33762 9.5279 4.28736 9.08201 4.53578 8.77648C4.78421 8.47095 5.23726 8.42148 5.5477 8.66598L8.48125 10.9759L12.9629 4.98973C13.1099 4.77269 13.3661 4.6527 13.6299 4.67738C13.8938 4.70207 14.1224 4.86745 14.2252 5.10786C14.328 5.34827 14.2882 5.62481 14.1216 5.82769Z"
+                                                    fill="#1DC8DA" />
+                                            </svg>
+                                            <span> Nhân viên chăm sóc trên 10 năm kinh nghiệm dành riêng cho chó. Có
+                                                kiến thức sâu rộng từ sức khoẻ, sinh sản, chó nhỏ đến trường thành.
+                                            </span>
+                                        </div>
+                                        <div class="list-item">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.13655 0.0192871C4.36671 0.0192871 0.5 3.82487 0.5 8.51929C0.5 13.2137 4.36671 17.0193 9.13655 17.0193C13.9064 17.0193 17.7731 13.2137 17.7731 8.51929C17.7675 3.82713 13.9041 0.0247517 9.13655 0.0192871Z"
+                                                    fill="#E1FCFF" />
+                                                <path
+                                                    d="M14.1216 5.82769L9.1952 12.4074C9.07771 12.5608 8.90251 12.6613 8.70898 12.6864C8.51544 12.7114 8.3198 12.6589 8.16601 12.5406L4.64806 9.7724C4.33762 9.5279 4.28736 9.08201 4.53578 8.77648C4.78421 8.47095 5.23726 8.42148 5.5477 8.66598L8.48125 10.9759L12.9629 4.98973C13.1099 4.77269 13.3661 4.6527 13.6299 4.67738C13.8938 4.70207 14.1224 4.86745 14.2252 5.10786C14.328 5.34827 14.2882 5.62481 14.1216 5.82769Z"
+                                                    fill="#1DC8DA" />
+                                            </svg>
+                                            <span>
+                                                Khẩu phần ăn uống đa đạng và đầy đủ vitamin, khoáng chất nhằm đáp ứng
+                                                nhu cầu vận động cũng như sức khoẻ của từng bé cún.
+                                            </span>
+                                        </div>
+                                        <div class="list-item">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.13655 0.0192871C4.36671 0.0192871 0.5 3.82487 0.5 8.51929C0.5 13.2137 4.36671 17.0193 9.13655 17.0193C13.9064 17.0193 17.7731 13.2137 17.7731 8.51929C17.7675 3.82713 13.9041 0.0247517 9.13655 0.0192871Z"
+                                                    fill="#E1FCFF" />
+                                                <path
+                                                    d="M14.1216 5.82769L9.1952 12.4074C9.07771 12.5608 8.90251 12.6613 8.70898 12.6864C8.51544 12.7114 8.3198 12.6589 8.16601 12.5406L4.64806 9.7724C4.33762 9.5279 4.28736 9.08201 4.53578 8.77648C4.78421 8.47095 5.23726 8.42148 5.5477 8.66598L8.48125 10.9759L12.9629 4.98973C13.1099 4.77269 13.3661 4.6527 13.6299 4.67738C13.8938 4.70207 14.1224 4.86745 14.2252 5.10786C14.328 5.34827 14.2882 5.62481 14.1216 5.82769Z"
+                                                    fill="#1DC8DA" />
+                                            </svg>
+                                            <span>
+                                                Dịch vụ spa đi kèm vệ sinh tắm rửa vui chơi hồ bơi trước khi trả bé về
+                                                nhà.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="number absolute top-4 left-4">
+                                <span class="text-primary">4</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="bg-feet absolute bottom-0 z-0">
+                    <img src="img/banner_tienich.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="banggia" class="banggia  px-4">
+            <div class="container flex flex-col gap-10 items-center">
+                <div class="custom_title text-center">
+                    <p>Bảng giá</p>
+                </div>
+                <div class="w-full grid grid-cols-1 sm:grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-5">
+                    <div class="card_price flex-1">
+                        <div class="flex flex-col justify-center items-center gap-4">
+                            <div class="title">Tính theo kg</div>
+                            <div class="box-price w-full flex flex-col gap-6">
+                                <div class="item_price  flex flex-row justify-between items-center px-7 py-1">
+                                    <div class="check_kg">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M25.3125 8.4375L12.1875 21.5625L5.625 15" stroke="#145192"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="">Từ 1 - 10kg</span>
+                                    </div>
+                                    <div class="price">
+                                        <span>150k</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="item_price bg-custom-price flex flex-row justify-between items-center px-7 py-1">
+                                    <div class="check_kg">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M25.3125 8.4375L12.1875 21.5625L5.625 15" stroke="#145192"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="">Từ 11 - 20kg</span>
+                                    </div>
+                                    <div class="price">
+                                        <span>200k</span>
+                                    </div>
+                                </div>
+                                <div class="item_price   flex flex-row justify-between items-center px-7 py-1">
+                                    <div class="check_kg">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M25.3125 8.4375L12.1875 21.5625L5.625 15" stroke="#145192"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="">Từ 20 - 30kg</span>
+                                    </div>
+                                    <div class="price">
+                                        <span>250k</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="item_price bg-custom-price  flex flex-row justify-between items-center px-7 py-1">
+                                    <div class="check_kg">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M25.3125 8.4375L12.1875 21.5625L5.625 15" stroke="#145192"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="">Từ 30 - 40kg</span>
+                                    </div>
+                                    <div class="price">
+                                        <span>300k</span>
+                                    </div>
+                                </div>
+                                <div class="item_price  flex flex-row justify-between items-center px-7 py-1">
+                                    <div class="check_kg">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M25.3125 8.4375L12.1875 21.5625L5.625 15" stroke="#145192"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="">Từ 40kg trở lên</span>
+                                    </div>
+                                    <div class="price">
+                                        <span>40kg</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_price flex-1">
+                        <div class="flex flex-col justify-center items-center gap-4">
+                            <div class="title">Tính theo ngày</div>
+                            <div class="box-price w-full flex flex-col gap-6">
+                                <div class="item_price  flex flex-row justify-between items-center px-7 py-1">
+                                    <div class="check_kg">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M25.3125 8.4375L12.1875 21.5625L5.625 15" stroke="#145192"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="">Gửi 5 ngày</span>
+                                    </div>
+                                    <div class="price">
+                                        <span>Free đưa đón</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="item_price bg-custom-price flex flex-row justify-between items-center px-7 py-1">
+                                    <div class="check_kg">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M25.3125 8.4375L12.1875 21.5625L5.625 15" stroke="#145192"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="">Gửi < 5 ngày</span>
+                                    </div>
+                                    <div class="price">
+                                        <span>50k/lượt (không tính kg)</span>
+                                    </div>
+                                </div>
+                                <div class="item_price   flex flex-row justify-between items-center px-7 py-1">
+                                    <div class="check_kg">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M25.3125 8.4375L12.1875 21.5625L5.625 15" stroke="#145192"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="">Gửi 10 ngày</span>
+                                    </div>
+                                    <div class="price">
+                                        <span>Free tắm + 200k nếu bơi</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="item_price bg-custom-price  flex flex-row justify-between items-center px-7 py-1">
+                                    <div class="check_kg">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M25.3125 8.4375L12.1875 21.5625L5.625 15" stroke="#145192"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="">Bơi hồ + tắm sấy</span>
+                                    </div>
+                                    <div class="price">
+                                        <span>400k/lượt</span>
+                                    </div>
+                                </div>
+                                <div class="item_price  flex flex-row justify-between items-center px-7 py-1">
+                                    <p class="">*Gửi tháng và gửi cố định thỏa thuận (được giảm từ 40 - 50%)</p
+                                        class="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-check w-full -mt-5">
+                    <div class=" flex flex-col gap-7 md:flex-row justify-between">
+                        <div class="flex flex-row items-start md:items-center gap-3.5">
+                            <div class="flex flex-col items-center">
+                                <svg class="w-[40px]" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20 35C28.2843 35 35 28.2843 35 20C35 11.7157 28.2843 5 20 5C11.7157 5 5 11.7157 5 20C5 28.2843 11.7157 35 20 35Z"
+                                        fill="#1DC8DA" />
+                                    <path d="M26.875 16.25L17.7031 25L13.125 20.625" stroke="white" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="flex items-center">
+                                <span>Mỗi ngày cún được vận động buổi sáng từ 6h30 - 9h30 tùy thời tiết</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-row items-start md:items-center gap-3.5">
+                            <div class="flex flex-col items-center">
+                                <svg class="w-[40px]" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20 35C28.2843 35 35 28.2843 35 20C35 11.7157 28.2843 5 20 5C11.7157 5 5 11.7157 5 20C5 28.2843 11.7157 35 20 35Z"
+                                        fill="#1DC8DA" />
+                                    <path d="M26.875 16.25L17.7031 25L13.125 20.625" stroke="white" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="flex items-center">
+                                <span>Thức ăn : sẽ theo yêu cầu của chủ nuôi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="dontra" class="dontra bg-[#F2F9FF] relative px-4">
+            <div class="container overflow-hidden flex flex-col gap-10 items-center py-[75px]">
+                <div class="custom_title text-center">
+                    <p>Quy trình đón/trả chuyên nghiệp</p>
+                </div>
+
+                <div class="box-content min-h-[350px] max-w-[980px] z-10 relative">
+                    <div class="flex flex-col gap-10 md:flex-row md:gap-[60px] lg:gap-[72px] md:px-[46px]">
+                        <div class="card-dontra md:max-w-[170px] lg:max-w-[248px]">
+                            <div class="inner flex flex-col justify-center items-center gap-4">
+                                <img class="max-w-[80px]" src="img/headphones 1.png" alt="">
+                                <div class="flex flex-col">
+                                    <p class="text-lg text-neu1 leading-[150%] text-center font-bold mb-2">Tiếp nhận
+                                        thông tin</p>
+                                    <span class="text-neu1 text-[15px] text-center">Khách sạn cho chó May Hotel tiếp
+                                        nhận vật nuôi
+                                        tại cơ sở hoặc đến tận nhà nếu
+                                        khách hàng quá bận không có thời gian, cũng như yêu cầu riêng.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-dontra md:max-w-[200px] lg:max-w-[248px] md:mt-[100px] lg:mt-[50px]">
+                            <div class="inner flex flex-col justify-center items-center gap-4">
+                                <img class="max-w-[85px]" src="img/pet-care.png" alt="">
+                                <div class="flex flex-col">
+                                    <p class="text-lg text-neu1 leading-[150%] text-center font-bold mb-2">Đón/Trả tận
+                                        nhà</p>
+                                    <span class="text-neu1 text-[15px] text-center">Quy trình đón và trả thú cưng tận
+                                        nhà được tổ chức một cách chu đáo và tiện lợi để đảm bảo sự thoải mái và an toàn
+                                        cho thú cưng cũng như chủ nuôi. Giúp tiết kiệm thời gian mà còn mang lại sự tiện
+                                        lợi và yên tâm tuyệt đối cho chủ nuôi và thú cưng.</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-dontra md:max-w-[170px] lg:max-w-[248px]">
+                            <div class="inner flex flex-col justify-center items-center gap-4">
+                                <img class="max-w-[80px]" src="img/headphones 1.png" alt="">
+                                <div class="flex flex-col">
+                                    <p class="text-lg text-neu1 leading-[150%] text-center font-bold mb-2">Ký hợp đồng
+                                    </p>
+                                    <span class="text-neu1 text-[15px] text-center">Ghi lại các thông tin cơ bản về thú
+                                        cưng như cân nặng, khẩu phần ăn, thói quen vệ sinh… Thông qua đó tiến hành tạo
+                                        ra một môi trường sinh hoạt phù hợp với thói quen của vật nuôi.</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <svg class="absolute svg_dontra w-full" width="980" height="326" viewBox="0 0 980 326" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M651.899 164C651.303 164 650.814 163.513 650.814 162.918C650.814 74.2768 578.439 2.17834 489.492 2.17834C400.545 2.17834 328.171 74.292 328.171 162.918C328.171 163.513 327.682 164 327.085 164C326.489 164 326 163.513 326 162.918C325.985 73.0886 399.322 0 489.492 0C579.662 0 653 73.0886 653 162.918C653 163.513 652.511 164 651.915 164H651.899Z"
+                            fill="#00265A" />
+                        <path
+                            d="M164.002 326C73.5747 326 0 252.875 0 163C0 162.406 0.490702 161.918 1.08875 161.918C1.68679 161.918 2.17749 162.406 2.17749 163C2.17749 251.686 74.7708 323.836 163.987 323.836C253.202 323.836 325.796 251.686 325.796 163C325.796 162.406 326.286 161.918 326.884 161.918C327.483 161.918 327.973 162.406 327.973 163C327.973 252.875 254.399 326 163.971 326H164.002Z"
+                            fill="#00265A" />
+                        <path
+                            d="M1.08875 164.082C0.490702 164.082 0 163.594 0 163V1.0821C0 0.487705 0.490702 0 1.08875 0C1.68679 0 2.17749 0.487705 2.17749 1.0821V163C2.17749 163.594 1.68679 164.082 1.08875 164.082Z"
+                            fill="#00265A" />
+                        <path
+                            d="M815.999 326C906.426 326 980.001 252.875 980.001 163C980.001 162.406 979.51 161.918 978.912 161.918C978.314 161.918 977.823 162.406 977.823 163C977.823 251.686 905.23 323.836 816.014 323.836C726.799 323.836 654.205 251.686 654.205 163C654.205 162.406 653.715 161.918 653.117 161.918C652.518 161.918 652.028 162.406 652.028 163C652.028 252.875 725.602 326 816.03 326H815.999Z"
+                            fill="#00265A" />
+                        <path
+                            d="M978.912 164.082C979.51 164.082 980.001 163.594 980.001 163V1.0821C980.001 0.487705 979.51 0 978.912 0C978.314 0 977.823 0.487705 977.823 1.0821V163C977.823 163.594 978.314 164.082 978.912 164.082Z"
+                            fill="#00265A" />
+                        <path
+                            d="M344.937 137.317C341.003 132.266 334.881 129 327.982 129C321.084 129 314.961 132.266 311.027 137.317H344.951H344.937Z"
+                            fill="#F2F9FF" />
+                        <path
+                            d="M311.014 163.637C314.948 168.688 321.071 171.954 327.969 171.954C334.867 171.954 340.99 168.688 344.924 163.637H311H311.014Z"
+                            fill="#F2F9FF" />
+                        <path
+                            d="M344.752 137.602C344.461 137.602 344.17 137.478 343.976 137.229C340.056 132.192 334.155 129.299 327.797 129.299C321.438 129.299 315.537 132.192 311.617 137.229C311.285 137.658 310.661 137.741 310.232 137.395C309.803 137.063 309.72 136.44 310.066 136.011C314.374 130.49 320.829 127.321 327.81 127.321C334.792 127.321 341.247 130.49 345.555 136.011C345.888 136.44 345.818 137.063 345.389 137.395C345.209 137.533 345.001 137.602 344.779 137.602H344.752Z"
+                            fill="#00265A" />
+                        <path
+                            d="M327.797 172.24C320.829 172.24 314.36 169.071 310.052 163.549C309.72 163.12 309.789 162.497 310.218 162.165C310.648 161.833 311.271 161.902 311.604 162.331C315.524 167.368 321.425 170.261 327.783 170.261C334.141 170.261 340.042 167.368 343.962 162.331C344.295 161.902 344.918 161.819 345.348 162.165C345.777 162.497 345.86 163.12 345.514 163.549C341.206 169.071 334.751 172.24 327.769 172.24H327.797Z"
+                            fill="#00265A" />
+                        <path
+                            d="M340.201 162.164C347.05 155.322 347.05 144.23 340.201 137.388C333.353 130.546 322.249 130.546 315.4 137.388C308.552 144.23 308.552 155.322 315.4 162.164C322.249 169.006 333.353 169.006 340.201 162.164Z"
+                            fill="#1DC8DA" />
+                        <path
+                            d="M328.351 151.025C328.032 151.025 327.713 150.901 327.464 150.666L319.596 142.806C319.111 142.321 319.111 141.532 319.596 141.048C320.081 140.564 320.87 140.564 321.355 141.048L329.223 148.908C329.708 149.393 329.708 150.181 329.223 150.666C328.974 150.915 328.655 151.025 328.337 151.025H328.351Z"
+                            fill="white" />
+                        <path
+                            d="M320.483 158.886C320.164 158.886 319.845 158.761 319.596 158.526C319.111 158.041 319.111 157.253 319.596 156.768L327.464 148.908C327.949 148.424 328.738 148.424 329.223 148.908C329.708 149.393 329.708 150.181 329.223 150.666L321.355 158.526C321.106 158.775 320.787 158.886 320.469 158.886H320.483Z"
+                            fill="white" />
+                        <path
+                            d="M335.11 151.025C334.792 151.025 334.473 150.901 334.224 150.666L326.356 142.806C325.871 142.321 325.871 141.532 326.356 141.048C326.841 140.564 327.63 140.564 328.115 141.048L335.983 148.908C336.468 149.393 336.468 150.181 335.983 150.666C335.734 150.915 335.415 151.025 335.097 151.025H335.11Z"
+                            fill="white" />
+                        <path
+                            d="M327.242 158.886C326.924 158.886 326.605 158.761 326.356 158.526C325.871 158.041 325.871 157.253 326.356 156.768L334.224 148.908C334.709 148.424 335.498 148.424 335.983 148.908C336.468 149.393 336.468 150.181 335.983 150.666L328.115 158.526C327.866 158.775 327.547 158.886 327.229 158.886H327.242Z"
+                            fill="white" />
+                        <path
+                            d="M667.33 136.299C663.396 131.248 657.273 127.983 650.375 127.983C643.477 127.983 637.354 131.248 633.42 136.299H667.344H667.33Z"
+                            fill="#F2F9FF" />
+                        <path
+                            d="M633.406 137.282C633.198 137.282 632.977 137.213 632.797 137.074C632.367 136.742 632.284 136.119 632.63 135.69C636.938 130.169 643.393 127 650.375 127C657.356 127 663.812 130.169 668.12 135.69C668.452 136.119 668.383 136.742 667.953 137.074C667.524 137.406 666.901 137.323 666.568 136.908C662.648 131.871 656.747 128.979 650.389 128.979C644.031 128.979 638.13 131.871 634.209 136.908C634.016 137.157 633.725 137.282 633.434 137.282H633.406Z"
+                            fill="#00265A" />
+                        <path
+                            d="M633.406 162.62C637.34 167.671 643.463 170.936 650.361 170.936C657.26 170.936 663.383 167.671 667.317 162.62H633.393H633.406Z"
+                            fill="#F2F9FF" />
+                        <path
+                            d="M650.375 171.919C643.407 171.919 636.938 168.75 632.63 163.229C632.298 162.8 632.367 162.177 632.797 161.845C633.226 161.513 633.849 161.582 634.182 162.011C638.102 167.048 644.003 169.94 650.361 169.94C656.719 169.94 662.62 167.048 666.54 162.011C666.873 161.582 667.496 161.499 667.926 161.845C668.355 162.177 668.438 162.8 668.092 163.229C663.784 168.75 657.329 171.919 650.347 171.919H650.375Z"
+                            fill="#00265A" />
+                        <path
+                            d="M667.332 153.792C669.739 144.42 664.085 134.873 654.703 132.469C645.322 130.064 635.765 135.712 633.358 145.084C630.951 154.456 636.605 164.003 645.987 166.408C655.368 168.812 664.925 163.164 667.332 153.792Z"
+                            fill="#1DC8DA" />
+                        <path
+                            d="M650.916 150.705C650.597 150.705 650.279 150.58 650.029 150.345L642.161 142.485C641.677 142.001 641.677 141.212 642.161 140.728C642.646 140.243 643.436 140.243 643.921 140.728L651.789 148.588C652.274 149.072 652.274 149.861 651.789 150.345C651.539 150.594 651.221 150.705 650.902 150.705H650.916Z"
+                            fill="white" />
+                        <path
+                            d="M643.062 158.565C642.743 158.565 642.424 158.44 642.175 158.205C641.69 157.721 641.69 156.932 642.175 156.448L650.043 148.588C650.528 148.103 651.318 148.103 651.802 148.588C652.287 149.072 652.287 149.861 651.802 150.345L643.934 158.205C643.685 158.454 643.366 158.565 643.048 158.565H643.062Z"
+                            fill="white" />
+                        <path
+                            d="M657.676 150.705C657.357 150.705 657.039 150.58 656.789 150.345L648.921 142.485C648.436 142.001 648.436 141.212 648.921 140.728C649.406 140.243 650.196 140.243 650.68 140.728L658.548 148.588C659.033 149.072 659.033 149.861 658.548 150.345C658.299 150.594 657.981 150.705 657.662 150.705H657.676Z"
+                            fill="white" />
+                        <path
+                            d="M649.821 158.565C649.503 158.565 649.184 158.44 648.935 158.205C648.45 157.721 648.45 156.932 648.935 156.448L656.803 148.588C657.288 148.103 658.077 148.103 658.562 148.588C659.047 149.072 659.047 149.861 658.562 150.345L650.694 158.205C650.445 158.454 650.126 158.565 649.808 158.565H649.821Z"
+                            fill="white" />
+                    </svg>
+                    <img class="absolute z-0 opacity-30 feet_dontra" src="img/dauchan1.png" alt="">
+                    <img class="absolute z-0 opacity-30 w-[100px] top-[50px] right-[-18%] -rotate-45 translate-x-[20%]"
+                        src="img/dauchan1.png" alt="">
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="thuvien" class="thuvienanh  px-4">
+            <div class=" flex flex-col gap-10 items-center">
+                <div class="custom_title text-center">
+                    <p>Thư viện hình ảnh</p>
+                </div>
+                <div class="container">
+                    <div class="video-container-2 rounded-2xl relative">
+                        <img width="100%" src="img/vd2.png" alt="">
+                        <img class="btn_play" src="img/playyy.png" alt=""
+                            onclick="playVideo2('video/petcare_video.mp4')">
+                        <div class="video-player" id="video_gallery">
+                            <video width="100%" height="100%" controls id="video2">
+                                <source src="video/petcare_video.mp4" type="video/mp4">
+                            </video>
+                            <img class="close-btn" src="img/out.png" onclick="stopVideo2()" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container relative">
+                    <div class="swiper gallery">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/gallery-2.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/gallery-3.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/gallery-4.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/gallery-4.png" alt="">
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="box-direc">
+                        <!-- Navigation buttons -->
+                        <div class="swiper-button-prev custom-prev-gallery"></div>
+                        <div class="swiper-button-next custom-next-gallery"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="faq" class="FAQ px-4">
+            <div class=" container flex flex-col gap-10 items-center">
+                <div class="custom_title text-center">
+                    <p>FAQ</p>
+                </div>
+
+                <div class="list-box w-full">
+                    <div class="flex flex-col gap-5 justify-center">
+                        <div
+                            class="item-FAQ relative w-full bg-white border rounded-xl transition-colors duration-300  peer-checked:bg-[#EFFEFF]">
+                            <input class="absolute peer opacity-0" type="checkbox" id="input1"
+                                onclick="toggleBackground(this)">
+
+                            <label
+                                class="font-semibold text-[20px] leading-[150%] text-[#1D1D1F] py-[10px] flex items-center ml-[30px] mr-[55px] h-[72px]"
+                                for="input1">
+                                Dịch vụ tiêu chuẩn của khách sạn cho chó bao gồm những gì?
+                            </label>
+                            <div
+                                class="icon_up_down absolute top-[15px] right-[30px] rotate-0 peer-checked:rotate-180 duration-200">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15 3.75C21.2132 3.75 26.25 8.7868 26.25 15C26.25 21.2132 21.2132 26.25 15 26.25C8.7868 26.25 3.75 21.2132 3.75 15C3.75 8.7868 8.7868 3.75 15 3.75Z"
+                                        stroke="#444444" stroke-width="1.5" stroke-miterlimit="10" />
+                                    <path d="M19.2188 13.125L15 17.8125L10.7812 13.125" stroke="#444444"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="max-h-0 overflow-hidden peer-checked:max-h-full ">
+                                <p class="text-neu1 text-[18px] leading-[150%] px-[30px] pb-[20px]">
+                                    Bao gồm lưu trú qua đêm, chăm sóc sức khỏe cơ bản, dinh dưỡng, vận động và thỉnh
+                                    thoảng cả các hoạt động giải trí.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="item-FAQ relative w-full bg-white border rounded-xl transition-colors duration-300  peer-checked:bg-[#EFFEFF]">
+                            <input class="absolute peer opacity-0" type="checkbox" id="input2"
+                                onclick="toggleBackground(this)">
+
+                            <label
+                                class="font-semibold text-[20px] leading-[150%] text-[#1D1D1F] py-[10px] flex items-center ml-[30px] mr-[60px] h-[72px]"
+                                for="input2">
+                                Phải chuẩn bị những gì trước khi đưa chó đến khách sạn?
+                            </label>
+                            <div
+                                class="icon_up_down absolute top-[15px] right-[30px] rotate-0 peer-checked:rotate-180 duration-200">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15 3.75C21.2132 3.75 26.25 8.7868 26.25 15C26.25 21.2132 21.2132 26.25 15 26.25C8.7868 26.25 3.75 21.2132 3.75 15C3.75 8.7868 8.7868 3.75 15 3.75Z"
+                                        stroke="#444444" stroke-width="1.5" stroke-miterlimit="10" />
+                                    <path d="M19.2188 13.125L15 17.8125L10.7812 13.125" stroke="#444444"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+                                <p class="text-neu1 text-[18px] leading-[150%] px-[30px] pb-[20px]">
+                                    Bao gồm lưu trú qua đêm, chăm sóc sức khỏe cơ bản, dinh dưỡng, vận động và thỉnh
+                                    thoảng cả các hoạt động giải trí.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="item-FAQ relative w-full bg-white border rounded-xl transition-colors duration-300  peer-checked:bg-[#EFFEFF]">
+                            <input class="absolute peer opacity-0" type="checkbox" id="input3"
+                                onclick="toggleBackground(this)">
+
+                            <label
+                                class="font-semibold text-[20px] leading-[150%] text-[#1D1D1F] py-[10px] flex items-center ml-[30px] mr-[60px] h-[72px]"
+                                for="input3">
+                                Chi phí lưu trú tai khách sạn cho chó là bao nhiêu?
+                            </label>
+                            <div
+                                class="icon_up_down absolute top-[15px] right-[30px] rotate-0 peer-checked:rotate-180 duration-200">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15 3.75C21.2132 3.75 26.25 8.7868 26.25 15C26.25 21.2132 21.2132 26.25 15 26.25C8.7868 26.25 3.75 21.2132 3.75 15C3.75 8.7868 8.7868 3.75 15 3.75Z"
+                                        stroke="#444444" stroke-width="1.5" stroke-miterlimit="10" />
+                                    <path d="M19.2188 13.125L15 17.8125L10.7812 13.125" stroke="#444444"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+                                <p class="text-neu1 text-[18px] leading-[150%] px-[30px] pb-[20px]">
+                                    Bao gồm lưu trú qua đêm, chăm sóc sức khỏe cơ bản, dinh dưỡng, vận động và thỉnh
+                                    thoảng cả các hoạt động giải trí.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="item-FAQ relative w-full bg-white border rounded-xl transition-colors duration-300  peer-checked:bg-[#EFFEFF]">
+                            <input class="absolute peer opacity-0" type="checkbox" id="input4"
+                                onclick="toggleBackground(this)">
+
+                            <label
+                                class="font-semibold text-[20px] leading-[150%] text-[#1D1D1F] py-[10px] flex items-center ml-[30px] mr-[60px] h-[72px]"
+                                for="input4">
+                                Khách sạn cho chó có cần đặt trước không?
+                            </label>
+                            <div
+                                class="icon_up_down absolute top-[15px] right-[30px] rotate-0 peer-checked:rotate-180 duration-200">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15 3.75C21.2132 3.75 26.25 8.7868 26.25 15C26.25 21.2132 21.2132 26.25 15 26.25C8.7868 26.25 3.75 21.2132 3.75 15C3.75 8.7868 8.7868 3.75 15 3.75Z"
+                                        stroke="#444444" stroke-width="1.5" stroke-miterlimit="10" />
+                                    <path d="M19.2188 13.125L15 17.8125L10.7812 13.125" stroke="#444444"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+                                <p class="text-neu1 text-[18px] leading-[150%] px-[30px] pb-[20px]">
+                                    Bao gồm lưu trú qua đêm, chăm sóc sức khỏe cơ bản, dinh dưỡng, vận động và thỉnh
+                                    thoảng cả các hoạt động giải trí.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#EBF6FF] px-4">
+        <div class="container overflow-hidden pt-[42px]">
+            <div class="grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-[95px] mb-[33px]">
+                <div class="flex-1">
+                    <div class="flex flex-col gap-[5px]">
+                        <div class="logo h-[97px]">
+                            <img class="h-full" src="img/logoMay.png" alt="">
+                        </div>
+                        <p class="font-bold text-[20px] leading-[150%] text-[#00265A]">Dịch vụ lưu trú khách sạn cho chó
+                            của May Hotel</p>
+                        <p class="text-neu1 text-[14px]">Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào
+                            việc trình
+                            bày </p>
+                    </div>
+
+
+                </div>
+                <div class="flex-1">
+                    <div class="flex flex-col gap-3">
+                        <div class="title">
+                            <p class="text-neu1 text-[20px] font-bold">Thông tin liên hệ</p>
+                        </div>
+                        <div class="info_contact flex flex-col gap-5">
+                            <div class="item">
+                                <svg width="13" height="15" viewBox="0 0 13 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.1075 10.5995L9.38118 9.19326C9.26471 9.13352 9.13527 9.12093 9.01235 9.15739C8.88942 9.19385 8.77967 9.27738 8.6996 9.39541L7.49223 11.1708C5.59739 10.0956 4.07247 8.26021 3.17907 5.97963L4.6542 4.52647C4.75246 4.43028 4.82201 4.29818 4.85232 4.15016C4.88262 4.00215 4.87203 3.84628 4.82216 3.70615L3.65374 0.42484C3.599 0.273785 3.50218 0.150453 3.37998 0.0761123C3.25778 0.00177107 3.11785 -0.0189204 2.98433 0.0176058L0.452762 0.720743C0.324034 0.756521 0.209182 0.843757 0.126952 0.968214C0.0447224 1.09267 -2.96537e-05 1.247 1.4742e-08 1.40601C1.4742e-08 8.92079 5.06071 15 11.2947 15C11.4269 15.0001 11.5551 14.9463 11.6586 14.8473C11.7621 14.7483 11.8346 14.6101 11.8643 14.4551L12.4485 11.4081C12.4787 11.2467 12.4611 11.0776 12.3989 10.93C12.3366 10.7824 12.2336 10.6656 12.1075 10.5995Z"
+                                        fill="#444444" />
+                                </svg>
+                                <span>090 245 22 54</span>
+                            </div>
+                            <div class="item">
+                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.7982 13.2166C18.7259 13.2223 18.6967 13.2834 18.6564 13.3239C17.851 14.1315 16.9277 14.7708 15.8885 15.2305C13.3609 16.3481 10.7874 16.429 8.18134 15.5277C7.9426 15.4451 7.71043 15.4364 7.4758 15.4967C7.13145 15.5854 6.78998 15.687 6.44974 15.7918C5.44094 16.1017 4.41982 16.2441 3.37034 16.0369C3.2976 16.006 3.24254 15.9668 3.33048 15.8941C3.38307 15.8508 3.44307 15.8161 3.50019 15.779C4.03684 15.429 4.54186 15.0436 4.87511 14.479C5.1533 14.0073 5.10892 13.7324 4.76211 13.3837C2.81601 11.4267 1.95802 9.08549 2.38619 6.3225C2.62781 4.76169 3.33993 3.41424 4.37297 2.24219C4.99674 1.53442 5.74091 0.959947 6.55453 0.480396C6.6026 0.45192 6.67533 0.444904 6.68396 0.371032C6.68314 0.368556 6.68191 0.366492 6.68068 0.364429C6.67985 0.362365 6.67903 0.360715 6.6778 0.359476C6.6778 0.359476 6.67766 0.359201 6.67739 0.358651C6.67575 0.355762 6.67328 0.353286 6.67081 0.351223C6.66958 0.349985 6.66835 0.349159 6.66712 0.348334C6.65109 0.337191 6.62972 0.342969 6.61246 0.342969C5.22891 0.342969 3.84494 0.316144 2.46262 0.351635C2.44208 0.352048 2.42153 0.352873 2.40098 0.354111C2.3866 0.354524 2.37222 0.35535 2.35825 0.356588C2.3488 0.357 2.33935 0.357826 2.3299 0.358651H2.32784C2.32414 0.359064 2.32044 0.359064 2.31675 0.359889C2.29497 0.36154 2.27319 0.363191 2.25182 0.365667C2.24032 0.366905 2.22922 0.368143 2.21772 0.369381C2.20046 0.37227 2.18361 0.374333 2.16676 0.376397C2.14334 0.379286 2.12033 0.383 2.09732 0.387127C2.07718 0.390429 2.05746 0.39373 2.03773 0.397857C2.02253 0.400746 2.00774 0.403635 1.99294 0.406936C1.97815 0.409825 1.96377 0.413127 1.94898 0.416841C1.93254 0.420143 1.91651 0.423857 1.90008 0.428396C1.88282 0.432523 1.86515 0.437063 1.84789 0.442015C1.77886 0.460587 1.71023 0.482459 1.64325 0.506808C1.62682 0.512999 1.60997 0.519189 1.59312 0.525792C1.54833 0.543126 1.50395 0.561697 1.4604 0.581919C1.44643 0.588109 1.43245 0.5943 1.41889 0.601315C1.4078 0.606268 1.39712 0.61122 1.38684 0.616998C1.37451 0.622776 1.3626 0.628966 1.35027 0.635156C1.3326 0.644236 1.31493 0.653728 1.29726 0.66322C1.2685 0.678902 1.23973 0.694997 1.21179 0.711918C1.20563 0.715632 1.19946 0.719346 1.1933 0.72306C1.17276 0.735441 1.15221 0.748235 1.13207 0.761854C1.07742 0.79652 1.024 0.834075 0.972639 0.874107C0.962366 0.881535 0.952093 0.889376 0.942231 0.89763C0.930314 0.906709 0.918809 0.916201 0.907303 0.925693C0.866212 0.959122 0.826353 0.993788 0.787316 1.03052C0.779097 1.03836 0.770468 1.0462 0.76225 1.05445C0.743348 1.07261 0.724445 1.09118 0.705954 1.11017C0.64596 1.17083 0.589254 1.23521 0.536246 1.3029C0.52474 1.31734 0.513234 1.3322 0.50214 1.34705C0.494743 1.35655 0.487347 1.36686 0.47995 1.37677C0.469266 1.39121 0.458583 1.40607 0.44831 1.42134C0.422422 1.45807 0.397356 1.49604 0.373934 1.53483C0.365716 1.54762 0.357908 1.56042 0.350512 1.57362C0.338595 1.59302 0.327089 1.61242 0.316406 1.63264C0.310242 1.64337 0.304489 1.65451 0.298736 1.66524C0.264219 1.72921 0.232579 1.79524 0.203814 1.86334C0.196418 1.88026 0.189432 1.89718 0.182858 1.91451C0.175872 1.93184 0.169298 1.94918 0.162723 1.96651C0.15697 1.98137 0.151628 1.99622 0.146697 2.01149C0.137657 2.03543 0.129439 2.06019 0.122042 2.08495C0.117522 2.09857 0.113413 2.11219 0.109304 2.12622C0.103962 2.14438 0.0986199 2.16254 0.0936889 2.1807C0.0887579 2.19886 0.0838269 2.21743 0.0793068 2.236C0.0698558 2.27273 0.0612265 2.31028 0.05383 2.34825C0.0513645 2.36022 0.048899 2.37219 0.0468445 2.38457C0.0427353 2.40438 0.039037 2.4246 0.0361606 2.44482C0.0349279 2.45019 0.0341061 2.45596 0.0332842 2.46174C0.029586 2.48403 0.0267096 2.50631 0.0238331 2.5286C0.0217786 2.54552 0.019724 2.56244 0.0176694 2.57977C0.0143821 2.60701 0.0119166 2.63425 0.00986199 2.66231C0.00821833 2.68006 0.00698558 2.69822 0.00616375 2.71638C0.004931 2.73082 0.00410916 2.74526 0.00369825 2.76012C0.00287642 2.78158 0.00205458 2.80263 0.00164367 2.82409C0.000821833 2.84514 0.000821832 2.86701 0.000821832 2.88888C0.00945107 7.19452 0.000821833 11.4998 0 15.8054C0 15.8335 0.000410917 15.8611 0.00164367 15.8888C0.00164367 15.9065 0.00287642 15.9238 0.00369825 15.9412C0.004931 15.9651 0.00616374 15.9886 0.00821832 16.0122C0.0102729 16.039 0.0127384 16.0654 0.0160257 16.0922C0.0164367 16.0976 0.0168476 16.1029 0.0176694 16.1083V16.11C0.0213676 16.1413 0.0258877 16.1731 0.0308187 16.2041C0.0332842 16.2214 0.0361606 16.2387 0.039037 16.2561C0.0398589 16.2606 0.0406807 16.2651 0.0415025 16.2693C0.0456117 16.2911 0.0497209 16.3126 0.0542409 16.3345C0.0595829 16.3605 0.0653357 16.3865 0.0714994 16.4121C0.0772523 16.436 0.083416 16.4599 0.0899907 16.4835C0.0957435 16.5045 0.101907 16.526 0.108071 16.547C0.109715 16.5528 0.111358 16.5586 0.113413 16.5639C0.116289 16.5742 0.119577 16.585 0.123275 16.5957C0.126562 16.6064 0.12985 16.6168 0.133548 16.6271C0.141355 16.6506 0.149574 16.6741 0.158203 16.6976C0.167243 16.7224 0.177105 16.7476 0.186967 16.7719C0.196829 16.7967 0.207102 16.821 0.217786 16.845C0.234633 16.8838 0.252714 16.9221 0.272027 16.9601C0.276136 16.9684 0.280656 16.9766 0.284765 16.9849C0.293805 17.0026 0.303256 17.0204 0.312707 17.0377C0.322569 17.0559 0.332431 17.074 0.343115 17.0918C0.352977 17.1091 0.363661 17.1264 0.373934 17.1438C0.384618 17.1611 0.395301 17.1784 0.406396 17.1954C0.415436 17.209 0.424477 17.223 0.433517 17.2366C0.447488 17.2573 0.461459 17.2775 0.475841 17.2977C0.490223 17.3179 0.505016 17.3377 0.519809 17.3571C0.529671 17.3699 0.539944 17.3831 0.550217 17.3959C0.560079 17.4087 0.570352 17.4215 0.581036 17.4343C0.595829 17.452 0.610622 17.4698 0.625826 17.4871C0.635688 17.4987 0.64596 17.5098 0.655822 17.521C0.667739 17.5338 0.679656 17.5466 0.691572 17.5593C0.705132 17.5738 0.718693 17.5878 0.732664 17.6019C0.746635 17.6155 0.760606 17.6291 0.774577 17.6427C0.786905 17.6547 0.799232 17.6662 0.811971 17.6778C0.824298 17.6893 0.837036 17.7009 0.849364 17.712C0.858404 17.7203 0.867444 17.7281 0.876484 17.7356C0.885525 17.7434 0.894565 17.7512 0.904016 17.7587C0.917576 17.7702 0.931136 17.7814 0.944697 17.7917C0.954558 17.7999 0.964831 17.8078 0.975104 17.8156C0.984966 17.8239 0.994828 17.8313 1.0051 17.8387C1.024 17.8528 1.04332 17.8668 1.06263 17.8804C1.07701 17.8903 1.0918 17.9006 1.10619 17.9101C1.11235 17.9147 1.11851 17.9188 1.12468 17.9225C1.15303 17.9411 1.1818 17.9592 1.21056 17.9766C1.26603 18.0092 1.32274 18.0401 1.38068 18.069C1.40985 18.0835 1.43944 18.0971 1.46944 18.1103C1.48711 18.1185 1.50519 18.126 1.52327 18.1334C1.54628 18.1429 1.56929 18.152 1.5923 18.1606C1.61161 18.1681 1.63175 18.1751 1.65147 18.1821C1.67366 18.1899 1.69585 18.1974 1.71804 18.204C1.74722 18.2131 1.77639 18.2217 1.80598 18.23C1.82529 18.2349 1.8446 18.2399 1.86433 18.2448C1.88405 18.2498 1.90378 18.2543 1.92391 18.2585C1.94158 18.2626 1.95966 18.2663 1.97774 18.2696C1.99746 18.2737 2.01719 18.277 2.03732 18.2803C2.09033 18.2894 2.14416 18.2964 2.1984 18.3018C2.2132 18.3034 2.2284 18.3047 2.24319 18.3055C2.27607 18.3084 2.30894 18.3105 2.34222 18.3117C3.4632 18.3558 4.58747 18.3187 5.7105 18.3175C5.79228 18.3199 5.87446 18.3249 5.95623 18.3249C7.93562 18.3253 9.91459 18.3253 11.8936 18.3253C13.3729 18.3253 14.8522 18.3315 16.3315 18.3232C16.373 18.3228 16.4145 18.322 16.4556 18.3195C16.465 18.3191 16.474 18.3183 16.4835 18.3179C16.4975 18.3171 16.5114 18.3162 16.525 18.315C16.5468 18.3133 16.5686 18.3113 16.5903 18.3088C16.6035 18.3076 16.617 18.3059 16.6302 18.3043C16.6438 18.3026 16.6573 18.301 16.6705 18.2989C16.7 18.2952 16.7292 18.2906 16.7584 18.2853C16.7851 18.2807 16.8114 18.2758 16.8377 18.2704C16.8784 18.2618 16.9187 18.2523 16.9585 18.2419C16.9725 18.2382 16.9869 18.2345 17.0004 18.2308C17.0013 18.2308 17.0021 18.2308 17.0029 18.23C17.0033 18.23 17.0037 18.2296 17.0037 18.2296C17.0197 18.225 17.0362 18.2205 17.0522 18.2155C17.067 18.211 17.0822 18.2065 17.097 18.2015C17.1258 18.1924 17.1541 18.1825 17.1825 18.1722C17.1985 18.1664 17.2145 18.1602 17.2305 18.154C17.249 18.147 17.2671 18.1396 17.2852 18.1322C17.3033 18.1247 17.3214 18.1169 17.3394 18.1086C17.3534 18.1029 17.367 18.0967 17.3805 18.0901C17.4109 18.076 17.4409 18.0616 17.4705 18.0463C17.4923 18.0348 17.5141 18.0232 17.5354 18.0112C17.5617 17.9968 17.5876 17.9819 17.6131 17.9663C17.6353 17.9531 17.6571 17.9394 17.6784 17.9254C17.6904 17.918 17.7023 17.9101 17.7142 17.9019C17.7236 17.8957 17.7331 17.8891 17.7425 17.8825C17.7951 17.8466 17.8457 17.8082 17.895 17.7682C17.9061 17.7591 17.9172 17.7496 17.9283 17.7405C17.9628 17.7116 17.9965 17.6815 18.0294 17.6501C18.0425 17.6382 18.0553 17.6262 18.0676 17.6134C18.1165 17.5655 18.1637 17.5156 18.2081 17.4636C18.2237 17.4454 18.2389 17.4273 18.2541 17.4087C18.2673 17.3926 18.2804 17.3761 18.2928 17.3596C18.3043 17.3452 18.3154 17.3303 18.3265 17.3154C18.3384 17.2989 18.3503 17.2824 18.3622 17.2655C18.3737 17.2494 18.3848 17.2329 18.3959 17.216C18.4699 17.1046 18.5352 16.9869 18.5907 16.8635C18.5956 16.8528 18.6005 16.8421 18.6051 16.8314C18.6133 16.8128 18.6211 16.7942 18.6285 16.7756C18.6367 16.7554 18.6445 16.7356 18.6523 16.7154C18.6531 16.7133 18.654 16.7108 18.6544 16.7088C18.6626 16.6873 18.6704 16.6659 18.6778 16.644C18.6823 16.6308 18.6868 16.618 18.6909 16.6048C18.6987 16.5808 18.7061 16.5565 18.7131 16.5322C18.7176 16.5181 18.7218 16.5037 18.7255 16.4888C18.7292 16.4756 18.7329 16.4624 18.7361 16.4488C18.7398 16.4356 18.7431 16.4224 18.746 16.4088C18.7624 16.3398 18.776 16.2697 18.7867 16.1987C18.7928 16.1591 18.7978 16.1186 18.8019 16.0786C18.8035 16.065 18.8048 16.0509 18.8056 16.0373C18.8072 16.0216 18.8085 16.0056 18.8093 15.9899C18.8138 15.9309 18.8159 15.871 18.8159 15.8108C18.8167 15.006 18.8167 14.2013 18.815 13.3965C18.815 13.3379 18.8348 13.2752 18.7982 13.2166ZM8.66294 9.48498C8.63253 9.22704 8.45666 9.08755 8.13039 9.08508C7.55018 9.08012 6.96996 9.08343 6.34825 9.08343C6.41646 8.99387 6.45632 8.93898 6.49823 8.88575C7.03653 8.20026 7.57565 7.51519 8.11272 6.82846C8.26928 6.62872 8.42625 6.42691 8.52446 6.19003C8.63746 5.91765 8.51501 5.66054 8.23723 5.56397C8.11149 5.52063 7.98123 5.51733 7.85179 5.51651C7.11912 5.51444 6.38646 5.51403 5.6538 5.51692C5.55189 5.51692 5.44669 5.52724 5.34972 5.55448C5.14344 5.61308 5.02181 5.78104 5.02345 5.97914C5.0251 6.17723 5.15042 6.34313 5.35712 6.39761C5.45491 6.42361 5.5597 6.43145 5.6616 6.43228C6.10663 6.43599 6.55165 6.43269 6.99667 6.43558C7.04475 6.43599 7.10597 6.40421 7.14501 6.47478C7.10844 6.52307 7.07187 6.57218 7.03406 6.62005C6.3992 7.43058 5.76351 8.2407 5.12865 9.05124C4.97127 9.25304 4.89155 9.47507 5.00578 9.72228C5.12002 9.96948 5.35301 10.0165 5.59134 10.0306C5.78241 10.0417 5.97472 10.0347 6.16621 10.0347C6.83066 10.0347 7.4947 10.0396 8.15915 10.0318C8.5109 10.0281 8.70074 9.81142 8.66294 9.48498ZM12.1167 7.10538C12.1122 6.77564 11.806 6.56475 11.4835 6.63078C11.3142 6.66545 11.2147 6.78472 11.1149 6.91142C10.6021 6.46199 10.0354 6.43434 9.47819 6.76326C8.80635 7.15986 8.55692 7.80655 8.64198 8.56013C8.7217 9.2613 9.0229 9.83412 9.75474 10.0727C10.2109 10.2212 10.6329 10.168 11.0072 9.86342C11.1038 9.78459 11.1334 9.79945 11.2028 9.88736C11.3442 10.0669 11.5648 10.1197 11.7769 10.0471C11.979 9.97815 12.1171 9.80564 12.1187 9.58031C12.1233 8.75533 12.1274 7.92994 12.1167 7.10538ZM10.9127 8.91794C10.6468 9.27781 10.1011 9.27904 9.83528 8.91876C9.71283 8.75286 9.66598 8.56219 9.66229 8.42023C9.65777 7.83668 9.97294 7.48671 10.4237 7.51354C10.6267 7.5255 10.7894 7.61176 10.9111 7.77642C11.1416 8.08801 11.1428 8.60594 10.9127 8.91794ZM17.4528 8.26547C17.4216 7.23538 16.6544 6.52885 15.6082 6.56104C14.6237 6.59158 13.9313 7.38313 13.9625 8.44292C13.9473 9.47342 14.7979 10.2547 15.8651 10.1469C16.8476 10.0483 17.4849 9.30834 17.4528 8.26547ZM16.2361 8.93032C15.9711 9.27615 15.4307 9.27327 15.171 8.92248C15.0445 8.75162 14.9947 8.55435 14.996 8.34346C14.9976 7.83049 15.3075 7.4896 15.7512 7.51312C15.9538 7.52385 16.117 7.60846 16.2402 7.77312C16.4761 8.08842 16.4749 8.61832 16.2361 8.93032ZM13.6026 7.62249C13.6026 6.97621 13.6054 6.32993 13.6013 5.68365C13.5997 5.35514 13.3901 5.1488 13.0778 5.15169C12.7758 5.15457 12.5744 5.36051 12.5691 5.67787C12.5658 5.87019 12.5683 6.06292 12.5683 6.25523C12.5683 7.34846 12.5675 8.44169 12.5691 9.5345C12.5695 9.79202 12.7244 10.0132 12.9319 10.0656C13.2775 10.1535 13.5989 9.90634 13.6013 9.54028C13.6058 8.90102 13.6026 8.26175 13.6026 7.62249Z"
+                                        fill="#444444" />
+                                    <path
+                                        d="M5.7105 18.3175C4.58747 18.3187 3.4632 18.3558 2.34222 18.3117C1.01455 18.2597 0 17.1405 0 15.8054C0.000821833 11.4998 0.00945107 7.19452 0.000821832 2.88888C-0.00205458 1.4135 1.14276 0.385889 2.46262 0.351635C3.84494 0.316144 5.22891 0.342969 6.61246 0.342969C6.63671 0.342969 6.66835 0.331001 6.68438 0.371032C6.67575 0.444492 6.6026 0.45192 6.55453 0.479983C5.74091 0.959534 4.99674 1.53401 4.37297 2.24178C3.33993 3.41383 2.62781 4.76128 2.38619 6.3225C1.95802 9.08549 2.81601 11.4267 4.76252 13.3837C5.10892 13.732 5.15371 14.0073 4.87552 14.479C4.54268 15.0436 4.03725 15.429 3.50101 15.7786C3.44348 15.8161 3.3839 15.8504 3.3313 15.8937C3.24336 15.9663 3.29842 16.0056 3.37116 16.0365C3.39129 16.0712 3.40403 16.1141 3.43238 16.1393C3.90412 16.561 4.3516 17.0092 4.81594 17.438C5.03619 17.6415 5.25151 17.8491 5.4619 18.0616C5.54532 18.1458 5.68996 18.1722 5.71133 18.3166L5.7105 18.3175Z"
+                                        fill="#444444" />
+                                    <path
+                                        d="M5.71126 18.3177C5.68989 18.1728 5.54525 18.1468 5.46184 18.0627C5.25145 17.8501 5.03613 17.6425 4.81588 17.4391C4.35154 17.0099 3.90405 16.5617 3.43232 16.1403C3.40397 16.1152 3.39123 16.0722 3.37109 16.0376C4.42057 16.2447 5.4417 16.1024 6.4505 15.792C6.79074 15.6876 7.13221 15.5861 7.47656 15.4969C7.71119 15.4367 7.94336 15.4453 8.1821 15.5279C10.7881 16.4296 13.3617 16.3483 15.8892 15.2307C16.9285 14.771 17.8518 14.1317 18.6572 13.3241C18.6974 13.2837 18.7266 13.2226 18.7989 13.2168C18.8359 13.2754 18.8158 13.3381 18.8158 13.3967C18.8174 14.2015 18.8174 15.0062 18.8166 15.811C18.8154 17.2043 17.7228 18.3161 16.3318 18.3239C14.8525 18.3321 13.3736 18.326 11.8943 18.326C9.91535 18.326 7.93596 18.326 5.95699 18.326C5.87481 18.326 5.79303 18.321 5.71085 18.3185L5.71126 18.3177Z"
+                                        fill="#444444" />
+                                    <path
+                                        d="M6.3482 9.08341C6.96992 9.08341 7.55013 9.0797 8.13076 9.08465C8.45661 9.08754 8.6329 9.22662 8.66289 9.48455C8.7007 9.81099 8.51127 10.0277 8.15911 10.0314C7.49507 10.0388 6.83062 10.0343 6.16658 10.0343C5.97468 10.0343 5.78278 10.0409 5.59171 10.0297C5.35337 10.0161 5.12038 9.96864 5.00615 9.72144C4.89192 9.47382 4.97122 9.25179 5.12901 9.0504C5.76388 8.23987 6.39916 7.42975 7.03443 6.61921C7.07224 6.57093 7.1084 6.52182 7.14538 6.47395C7.10675 6.40338 7.04512 6.43515 6.99704 6.43474C6.55202 6.43185 6.10699 6.43474 5.66197 6.43144C5.56007 6.43061 5.45569 6.42236 5.35748 6.39677C5.15079 6.3423 5.02546 6.17639 5.02382 5.9783C5.02218 5.77979 5.14381 5.61183 5.34968 5.55364C5.44706 5.52599 5.55226 5.5165 5.65375 5.51608C6.38642 5.51319 7.11908 5.51319 7.85174 5.51608C7.98118 5.5165 8.11144 5.5198 8.23718 5.56354C8.51496 5.6597 8.63742 5.91722 8.52442 6.18919C8.42621 6.42649 8.26924 6.62788 8.11268 6.82804C7.57561 7.51476 7.03649 8.19942 6.49819 8.88532C6.45627 8.93856 6.416 8.99303 6.3482 9.083V9.08341Z"
+                                        fill="#444444" />
+                                    <path
+                                        d="M12.1167 7.10541C12.1122 6.77566 11.8061 6.56478 11.4835 6.63081C11.3142 6.66547 11.2148 6.78474 11.1149 6.91144C10.6021 6.46202 10.0354 6.43436 9.47824 6.76328C8.80639 7.15988 8.55696 7.80657 8.64202 8.56015C8.72174 9.26132 9.02294 9.83414 9.75478 10.0727C10.2109 10.2213 10.6329 10.168 11.0073 9.86344C11.1038 9.78462 11.1334 9.79948 11.2029 9.88738C11.3442 10.0669 11.5649 10.1197 11.7769 10.0471C11.9791 9.97817 12.1171 9.80567 12.1188 9.58034C12.1233 8.75536 12.1274 7.92997 12.1167 7.10541ZM10.9127 8.91796C10.6469 9.27783 10.1012 9.27907 9.83532 8.91879C9.71287 8.75288 9.66603 8.56222 9.66233 8.42025C9.65781 7.8367 9.97298 7.48674 10.4238 7.51356C10.6267 7.52553 10.7895 7.61178 10.9111 7.77645C11.1416 8.08803 11.1429 8.60596 10.9127 8.91796Z"
+                                        fill="#444444" />
+                                    <path
+                                        d="M17.4523 8.2653C17.421 7.23521 16.6539 6.52868 15.6077 6.56087C14.6231 6.59141 13.9307 7.38296 13.962 8.44276C13.9467 9.47326 14.7973 10.2545 15.8645 10.1468C16.847 10.0481 17.4843 9.30818 17.4523 8.2653ZM16.2356 8.93015C15.9705 9.27599 15.4302 9.2731 15.1705 8.92231C15.0439 8.75145 14.9942 8.55419 14.9954 8.3433C14.9971 7.83032 15.3069 7.48943 15.7507 7.51296C15.9533 7.52369 16.1164 7.60829 16.2397 7.77296C16.4755 8.08825 16.4743 8.61815 16.2356 8.93015Z"
+                                        fill="#444444" />
+                                    <path
+                                        d="M13.6025 7.62277C13.6025 8.26204 13.6058 8.9013 13.6013 9.54098C13.5988 9.90662 13.2775 10.1538 12.9319 10.0663C12.7244 10.0139 12.5695 9.79272 12.5691 9.5352C12.5674 8.44197 12.5683 7.34916 12.5683 6.25593C12.5683 6.06361 12.5658 5.87088 12.5691 5.67857C12.5744 5.36121 12.7758 5.15527 13.0778 5.15238C13.3901 5.14908 13.5993 5.35584 13.6013 5.68435C13.6054 6.33063 13.6025 6.97691 13.6025 7.62318V7.62277Z"
+                                        fill="#444444" />
+                                </svg>
+
+                                <span>090 245 22 54</span>
+                            </div>
+                            <div class="item">
+                                <svg width="13" height="17" viewBox="0 0 13 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.3907 16.657C0.843959 9.66314 0 8.94535 0 6.375C0 2.85417 2.68993 0 6.00816 0C9.32638 0 12.0163 2.85417 12.0163 6.375C12.0163 8.94535 11.1724 9.66314 6.62562 16.657C6.32725 17.1143 5.68904 17.1143 5.3907 16.657ZM6.00816 9.03125C7.39076 9.03125 8.51156 7.84201 8.51156 6.375C8.51156 4.90799 7.39076 3.71875 6.00816 3.71875C4.62556 3.71875 3.50476 4.90799 3.50476 6.375C3.50476 7.84201 4.62556 9.03125 6.00816 9.03125Z"
+                                        fill="#444444" />
+                                </svg>
+
+                                <span>https://www.facebook.com/maycafehouse</span>
+                            </div>
+                            <div class="item">
+                                <svg width="13" height="17" viewBox="0 0 13 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.3907 16.657C0.843959 9.66314 0 8.94535 0 6.375C0 2.85417 2.68993 0 6.00816 0C9.32638 0 12.0163 2.85417 12.0163 6.375C12.0163 8.94535 11.1724 9.66314 6.62562 16.657C6.32725 17.1143 5.68904 17.1143 5.3907 16.657ZM6.00816 9.03125C7.39076 9.03125 8.51156 7.84201 8.51156 6.375C8.51156 4.90799 7.39076 3.71875 6.00816 3.71875C4.62556 3.71875 3.50476 4.90799 3.50476 6.375C3.50476 7.84201 4.62556 9.03125 6.00816 9.03125Z"
+                                        fill="#444444" />
+                                </svg>
+
+                                <span>225 đường Kinh Đông, Huyện Củ Chi, TP.HCM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <div class="flex flex-col gap-3">
+                        <div class="title">
+                            <p class="text-neu1 text-[20px] font-bold">Theo dõi chúng tôi</p>
+                        </div>
+                        <iframe
+                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmaycafehouse&tabs=timeline&width=330&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                            width="330" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center border-t border-[#979797] py-[6px]">
+                <p class="text-[14px] text-neu1 leading-[150%]">© Copyright 2023. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
